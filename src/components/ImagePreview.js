@@ -1,28 +1,18 @@
+// src/components/ImagePreview.js
 import React from "react";
 import "../styles/ImagePreview.css";
 
-const ImagePreview = ({
-  previewUrl,
-  brightness,
-  contrast,
-  saturation,
-  rotation,
-}) => {
+function ImagePreview({ previewUrl }) {
   return (
-    <div className="preview-section">
+    <div className="image-preview-container">
       <h3>Preview</h3>
-      {previewUrl && (
-        <img
-          src={previewUrl}
-          alt="preview"
-          style={{
-            filter: `brightness(${brightness}) contrast(${contrast}) saturate(${saturation})`,
-            transform: `rotate(${rotation}deg)`,
-          }}
-        />
+      {previewUrl ? (
+        <img src={previewUrl} alt="Preview" className="image-preview" />
+      ) : (
+        <p>No preview available</p>
       )}
     </div>
   );
-};
+}
 
 export default ImagePreview;
