@@ -1,0 +1,11 @@
+.preview-section {
+    margin: 20px;
+    text-align: center;
+  }
+  
+  img {
+    max-width: 400px;
+    max-height: 400px;
+    object-fit: contain;
+  }
+  

@@ -1,0 +1,12 @@
+.upload-section {
+    margin: 20px;
+    text-align: center;
+  }
+  
+  .dropzone {
+    border: 2px dashed #ccc;
+    padding: 20px;
+    cursor: pointer;
+    text-align: center;
+  }
+  
